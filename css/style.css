@@ -1,0 +1,46 @@
+.container {
+    display: block;
+    position: absolute;
+    /* display: flexbox; */
+    height: 100%;
+    width: 100%;
+}
+
+.header_publico {
+    height: 30px;
+    
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #345593;
+    border-bottom: 3px solid orange;
+}
+
+.navbar {
+    list-style: none;
+    color: white;
+    text-align: center;
+    
+}
+
+li {
+    display: inline;
+    padding: 14px 36px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    background-color: #d3d3d3;
+    height: 100%;
+}
+
+.main-nav {
+    padding: 30px;
+    background-color: white;
+    width: 70%;
+    justify-content: center;
+}
+
