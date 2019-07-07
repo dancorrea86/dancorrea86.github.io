@@ -1,0 +1,36 @@
+<div class="calculator">
+    <div>
+        <h1>Calculadora Simples Nacional</h1>
+    </div>
+</div>
+<div>
+    <button class="button" id="anexoI" onclick="alterAttchementHtml1()">Anexo I</button>
+    <button class="button" id="anexoIII" onclick="alterAttchementHtml()">Anexo III</button>
+</div>
+<div id="formulario">
+    <form id="anexoIform">
+        <div>
+            <label>Faturamento ultimos 12 meses</label>
+            <input type="text" id="FatAcumulado" name="FatAcumulado">
+        </div>
+        <div>
+            <label>Vendas</label>
+            <input type="text" id="Vendas" name="Vendas">
+        </div>
+        <div>
+            <label>Vendas Monofásicas</label>
+            <input type="text" id="VendasMono" name="VendasMono">
+        </div>
+        <div>
+            <label>Vendas ICMS-ST</label>
+            <input type="text" id="VendasSubst" name="VendasSubst">
+        </div>
+        <div>
+            <label>Vendas ICMS-ST e Mono</label>
+            <input type="text" id="VendasSubstMono" name="VendasSubstMono">
+        </div>
+    </form>       
+</div>
+<div>
+    <button class="button" id="anexoI" onclick="showResults()">Calcula</button>
+</div>

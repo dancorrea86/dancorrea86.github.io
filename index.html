@@ -23,19 +23,31 @@
                 </div>
             </div>
         </div>
-        <div class="main">
+        <main id='main'>
             <div class="main-nav">
                 <h1>My first site</h1>
-                <p>link para próxima<a href="pagina2.html">página</a></p>
+                <p>link para próxima<a href="pagina1.html">página</a></p>
+                <p>link para próxima TESTE<a href="pagina2.html">página</a></p>
                 <input type="button" value="Click" onclick="printValueOnConsole()">
             </div>
-            
-        </div>
+        </main>
     </div>
     <script>
+        document.querySelectorAll('a').forEach(link => {
+            const conteudo = document.getElementById('main')
+
+            link.onclick = function(e) {
+                e.preventDefault()
+                fetch(link.href)
+                    .then(resp => resp.text())
+                    // .then(html => console.log(html))
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
         function printValueOnConsole() {
             console.log("value")
         }
     </script>
+    <script src="js/simplesCalc.js"></script> 
 </body>
 </html>
