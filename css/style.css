@@ -33,7 +33,6 @@ li {
 
 main {
     display: block;
-    justify-content: center;
     background-color: #d3d3d3;
     height: 100%;
 }
@@ -42,7 +41,7 @@ main {
     padding: 30px;
     background-color: white;
     width: 70%;
-    justify-content: center;
+    margin: auto;
 }
 
 label {
@@ -50,4 +49,25 @@ label {
     /* background-color: green; */
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
 
+#resultSimples {
+    margin: 20px;
+}
+
+.lines {
+    padding: 10px;
+}
+
+input {
+    text-align: right;
+}
+
+.mainCont {
+    display: block;
+    width: 50%;
+    margin: auto;
+}

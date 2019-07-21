@@ -105,15 +105,12 @@ function calculateSimples() {
     var simples = 1;
     if ( attachement == 1 ) {
         var aliquots = othersRateAtt1();
-        console.log(aliquots)
-        console.log( revenuesAttc1.revenues )
         var simples = ( revenuesAttc1.revenues * aliquots[0] ) +
                       ( revenuesAttc1.revenusMono * aliquots[1] ) +
                       ( revenuesAttc1.revenuesSt * aliquots[2] ) +
                       ( revenuesAttc1.revenuesStandMono * aliquots[3] );
     } else if ( attachement == 3 ) {
         var aliquots = othersRateAtt3();
-        console.log(aliquots)
         var simples = ( revenuesAttc3.revenues * aliquots[0] ) +
                       ( revenuesAttc3.revenuesRetention * aliquots[1] )
     }
@@ -128,8 +125,11 @@ function showResults() {
         revenuesAttc3 = getReveneusAttchIII()
     }
     
-    console.log(calculateSimples());
+    const resultLabel = document.getElementById('resultSimples')
+    resultLabel.innerHTML = calculateSimples()
 }
+
+
 
 
 
