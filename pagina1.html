@@ -1,36 +1,69 @@
-<div class="calculator">
-    <div>
-        <h1>Calculadora Simples Nacional</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header-wrapper">
+            <div class="header_publico">
+                <div class="row"></div>
+            </div>
+            <div class="menu">
+                <div class="container-menu">
+                    <ul class="navbar">
+                        <li>DANIEL CORREA</li>
+                        <li><a href="/pagina2.html">MENU</a></li>
+                        <li>SISTEMA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <main id="main">
+            <div id='main-nav' class="main-nav">
+                <div class="calculator">
+                    <div>
+                        <h1>Calculadora Simples Nacional</h1>
+                    </div>
+                </div>
+                <div>
+                    <button class="button" id="anexoI" onclick="alterAttchementHtml1()">Anexo I</button>
+                    <button class="button" id="anexoIII" onclick="alterAttchementHtml()">Anexo III</button>
+                </div>
+                <div id="formulario">
+                    <form id="anexoIform">
+                        <div>
+                            <label class="w3-text-blue">Faturamento ultimos 12 meses</label>
+                            <input class="w3-input w3-border" type="text" id="FatAcumulado" name="FatAcumulado">
+                        </div>
+                        <div>
+                            <label class="w3-text-blue">Vendas</label>
+                            <input class="w3-input w3-border" type="text" id="Vendas" name="Vendas">
+                        </div>
+                        <div>
+                            <label class="w3-text-blue">Vendas Monofásicas</label>
+                            <input class="w3-input w3-border" type="text" id="VendasMono" name="VendasMono">
+                        </div>
+                        <div>
+                            <label class="w3-text-blue">Vendas ICMS-ST</label>
+                            <input class="w3-input w3-border" type="text" id="VendasSubst" name="VendasSubst">
+                        </div>
+                        <div>
+                            <label>Vendas ICMS-ST e Mono</label>
+                            <input type="text" id="VendasSubstMono" name="VendasSubstMono">
+                        </div>
+                    </form>       
+                </div>
+                <div>
+                    <button class="button" id="anexoI" onclick="showResults()">Calcula</button>
+                </div>
+            </div>
+        </main>
     </div>
-</div>
-<div>
-    <button class="button" id="anexoI" onclick="alterAttchementHtml1()">Anexo I</button>
-    <button class="button" id="anexoIII" onclick="alterAttchementHtml()">Anexo III</button>
-</div>
-<div id="formulario">
-    <form id="anexoIform">
-        <div>
-            <label>Faturamento ultimos 12 meses</label>
-            <input type="text" id="FatAcumulado" name="FatAcumulado">
-        </div>
-        <div>
-            <label>Vendas</label>
-            <input type="text" id="Vendas" name="Vendas">
-        </div>
-        <div>
-            <label>Vendas Monofásicas</label>
-            <input type="text" id="VendasMono" name="VendasMono">
-        </div>
-        <div>
-            <label>Vendas ICMS-ST</label>
-            <input type="text" id="VendasSubst" name="VendasSubst">
-        </div>
-        <div>
-            <label>Vendas ICMS-ST e Mono</label>
-            <input type="text" id="VendasSubstMono" name="VendasSubstMono">
-        </div>
-    </form>       
-</div>
-<div>
-    <button class="button" id="anexoI" onclick="showResults()">Calcula</button>
-</div>
+    <script src="js/simplesCalc.js"></script> 
+</body>
+</html>

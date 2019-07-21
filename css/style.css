@@ -32,7 +32,7 @@ li {
 }
 
 main {
-    display: flex;
+    display: block;
     justify-content: center;
     background-color: #d3d3d3;
     height: 100%;
@@ -44,4 +44,10 @@ main {
     width: 70%;
     justify-content: center;
 }
+
+label {
+    color:#2196F3;
+    /* background-color: green; */
+}
+
 
